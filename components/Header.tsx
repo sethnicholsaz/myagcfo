@@ -9,12 +9,14 @@ const Header = () => {
   const pathname = usePathname()
 
   const navigationItems = [
+    { name: 'About', href: '/about' },
+    { name: 'Process', href: '/process' },
     { name: 'Tools', href: '/tools' },
-    { name: 'About', href: '/#about' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'Contact', href: '/contact' },
   ]
 
-  const segmentItems = [
+  const servicesItems = [
+    { name: 'All Services', href: '/services' },
     { name: 'Dairy Operations', href: '/dairy' },
     { name: 'Stocker/Feedlot Operations', href: '/cattle' },
     { name: 'Cow Calf Producers', href: '/ranch' },
@@ -45,17 +47,17 @@ const Header = () => {
               </Link>
             ))}
             
-            {/* Segments Dropdown */}
+            {/* Services Dropdown */}
             <div className="relative group">
               <button className="text-gray-700 hover:text-ag-green-600 font-medium transition-colors duration-200 flex items-center">
-                Segments
+                Services
                 <svg className="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div className="py-2">
-                  {segmentItems.map((item) => (
+                  {servicesItems.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
@@ -108,8 +110,8 @@ const Header = () => {
             ))}
             
             <div className="px-3 py-2">
-              <div className="text-sm font-medium text-gray-500 mb-2">Segments</div>
-              {segmentItems.map((item) => (
+              <div className="text-sm font-medium text-gray-500 mb-2">Services</div>
+              {servicesItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
