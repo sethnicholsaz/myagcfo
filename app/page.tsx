@@ -324,7 +324,6 @@ export default function Home() {
               <iframe 
                 className="clickup-embed clickup-dynamic-height" 
                 src="https://forms.clickup.com/90131764416/f/2ky4b560-533/8K37VD9Q2HTEV51OAV" 
-                onWheel={() => {}} 
                 width="100%" 
                 height="100%" 
                 style={{
