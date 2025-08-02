@@ -308,6 +308,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact Form Section */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-max">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Get In Touch</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Ready to discuss your agricultural operation's financial needs? Fill out the form below 
+              and we'll get back to you within 24 hours.
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+              <iframe 
+                className="clickup-embed clickup-dynamic-height" 
+                src="https://forms.clickup.com/90131764416/f/2ky4b560-533/8K37VD9Q2HTEV51OAV" 
+                onWheel={() => {}} 
+                width="100%" 
+                height="100%" 
+                style={{
+                  background: 'transparent', 
+                  border: '1px solid #ccc',
+                  borderRadius: '8px',
+                  minHeight: '600px'
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   )

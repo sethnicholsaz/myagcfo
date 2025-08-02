@@ -67,6 +67,7 @@ export default function RootLayout({
             `,
           }}
         />
+        <script async src="https://app-cdn.clickup.com/assets/js/forms-embed/v1.js" />
       </head>
       <body className="antialiased">
         {children}
