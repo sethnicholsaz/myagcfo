@@ -244,6 +244,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Section */}
+      <section id="about" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">About Seth Nichols</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Founder & Agriculture CFO Expert
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
+              <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed">
+                <p className="text-lg mb-6">
+                  Seth Nichols is the founder of <strong>SHN Solutions</strong>, a strategic finance and technology firm 
+                  helping modern agriculture operations gain clarity, control, and confidence in their financial future.
+                </p>
+                
+                <p className="mb-6">
+                  With deep experience across dairy, beef, and row crop sectors, Seth combines CFO-level insight 
+                  with hands-on ag knowledge to deliver customized solutions in financial modeling, data automation, 
+                  and operational strategy.
+                </p>
+                
+                <p className="mb-6">
+                  He is passionate about building tools that empower producers — from dynamic cost tracking to 
+                  SaaS platforms — and believes the next generation of ag success will be led by those who 
+                  harness both soil and software.
+                </p>
+                
+                <div className="bg-ag-green-50 border border-ag-green-200 rounded-lg p-6 mt-8">
+                  <h3 className="text-lg font-semibold text-ag-green-800 mb-3">Why Agriculture-Focused CFO Services?</h3>
+                  <p className="text-ag-green-700 mb-0">
+                    "Agriculture is unique. Generic financial advice doesn't account for commodity cycles, weather risks, 
+                    or the capital-intensive nature of farming. That's why I focus exclusively on ag operations — 
+                    because your business deserves financial expertise as specialized as your farming knowledge."
+                  </p>
+                  <p className="text-ag-green-700 font-medium mt-3 mb-0">— Seth Nichols, Founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section id="contact" className="section-padding bg-gradient-to-br from-ag-green-600 to-ag-green-800 text-white">
         <div className="container-max text-center">
